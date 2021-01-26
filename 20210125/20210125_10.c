@@ -25,6 +25,6 @@ int get_reversed(char s[]){
         str[cnt] = s[i];
         cnt ++;
     }
-    str[cnt+1] = '\0';
+    str[cnt-1] = '\0';
     printf("%s\n", str);
 }
