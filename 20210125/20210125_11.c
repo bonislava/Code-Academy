@@ -19,6 +19,7 @@ int main(){
     return 0;
 }
 int get_reversed(char s[]){
+    int j = 0;
     for (int i = 0, j = (strlen(s) - 1); i < j; i++, j--){
         char z = s[j];
         s[j] = s[i];
