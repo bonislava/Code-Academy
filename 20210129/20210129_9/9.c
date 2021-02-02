@@ -7,26 +7,27 @@ Main вика Ф1;
 
 #include <stdio.h>
 #include "9.h"
+
 int main(){
     int a = 1;
     printf("result is %d",Add3());
- return 0;
+    return 0;
 }
 
 int Add3(){
-    int c;
-    printf("Enter a value of c:");
-    scanf("%d",&c);
-    return Add2(c);
+    int b;
+    printf("Enter a value of b:");
+    scanf("%d",&b);
+    return Add2(b)+2;
 }
 
-int Add2(){
-    int b;
-    printf("enter a value of b:");
-    scanf("%d",&b);
-    return Add(b);
+int Add2(int b){
+    int a;
+    printf("enter a value of a:");
+    scanf("%d",&a);
+    return Add(a)+5;
 }
 
 int Add(int a){
-    return a+1;
+    return a+4;
 }

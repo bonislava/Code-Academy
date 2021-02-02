@@ -1,3 +1,3 @@
-int Add(int a);
-int Add2();
 int Add3();
+int Add2(int b);
+int Add(int a);
