@@ -10,6 +10,7 @@ int main(){
     int a[] ={1,2,3};
     int l=sizeof(a)/4;
     printArr(a,l);
+    return 0;
 }
 int printArr(int a[],int l){
     int i;
