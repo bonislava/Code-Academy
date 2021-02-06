@@ -19,6 +19,7 @@ int main(){
     }else{
         printf("is not in the arr");
     }
+    return 0;
 }
 int check(){
     int x;
