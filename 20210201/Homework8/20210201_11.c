@@ -9,6 +9,7 @@ int main(){
     char x;
     squeeze(s,x);
     printf("%s\n",s);
+    return 0;
 }
 void squeeze(char s[],int c){
     int i,j;
