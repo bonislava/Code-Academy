@@ -11,6 +11,7 @@ int main(){
     char s1[] = "345";
     char s2[] = "345";
     printf("%d",any(s1,s2));
+    return 0;
 }
 int any(char s1[],char s2[]){
     int i, j;
