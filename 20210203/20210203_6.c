@@ -13,6 +13,7 @@ int main(){
     int *b =&y;
     my_swap(a,b);
     printf("New value of x: %d, y: %d",x,y);
+    return 0;
 }
 void my_swap(int *a,int *b){
     *a = *a + *b; 
