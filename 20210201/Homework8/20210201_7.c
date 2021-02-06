@@ -10,6 +10,7 @@ int Multiplication(int x);
 
 int main(){
     printf("The rezult is : %ld",Multiplication(30));
+    return 0;
 }
 int Multiplication(int x){
     int m = 1;
