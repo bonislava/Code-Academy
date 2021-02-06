@@ -12,4 +12,5 @@ int main(){
     printf("The first element of arr1 is %d\n",arr1[1]);
     printf("The second of arr2 is %c\n",arr2[2]);
     printf("The third element of arr3 is %f\n",arr3[3]);
+    return 0;
 }
