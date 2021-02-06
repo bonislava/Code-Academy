@@ -8,3 +8,29 @@
 Достъпете 10 тия елемент и го умножете по 3.
 Изпишете го по двата възможни начина и закоментирайте единия.
 Принтирайте на екрана всички елементи на масива.*/
+#include <stdio.h>
+
+int print(int a[], int lenght);
+
+int main(){
+    int arr[] = {100,90,80,70,60,50,40,30,20,10};
+    int *arrp = arr;
+    *(arrp+2) = 5; /*arr[2]=5;*/
+    *(arrp+3) = 33;/*arr[3]=33;*/
+    *(arrp+4) -= 7;/*arr[4] -=7;*/
+    *(arrp+6) += 10;/*arr[6] +=10;*/
+    *(arrp+9) *= 3; /*arr[9] *=3;*/
+    printf("Position 3 = %d\n",*(arrp+2));
+    printf("Position 4 = %d\n",*(arrp+3));
+    printf("Position 5 = %d\n",*(arrp+4));
+    printf("Position 7 = %d\n",*(arrp+6));
+    printf("Position 10 = %d\n",*(arrp+9));
+    int lenght = sizeof(arr)/4;
+    print(arr, lenght);
+    return 0;
+}
+int print(int a[], int lenght){
+    for (int i = 0; i < lenght; i++){
+        printf(" %d ", a[i]);
+    }
+}

@@ -8,3 +8,36 @@ x), която получава като първи аргумент начал�
 повтаря, докато елемента от масива не стане равен с търсения.
 Тогава връщаме номера на който се намира елемента в масива
 или -1 ако не се съдържа в масива.*/
+#include <stdio.h>
+
+int binarySearch(int a[], int n, int x);
+
+int main(){
+    int a[] = {1,2,5,6,9,12,14,18,100};
+    int n = 4;
+    int x = 5;
+    if(binarySearch(a,n,x) != -1){
+       printf("is in arr on position : %d\n",binarySearch(a,n,x));
+    }else{
+        printf("is not in the arr");
+    }
+    return 0;
+}
+int binarySearch(int a[],int n,int x){
+    int m , l = 0;
+    int h = n-1;
+    while(l <= h){
+        m = (l + h)/2;
+        if(x < a[m]){
+            l = m + 1;
+        }
+        else if(x > a[m]){
+            l = m + 1;
+        }
+        else{
+            return m;
+        }
+    }
+    return -1;
+}
+
