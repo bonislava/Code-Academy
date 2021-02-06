@@ -7,6 +7,7 @@ int Multiplication(int x,int y);
 
 int main(){
     printf("The rezult is : %d",Multiplication(1,30));
+    return 0;
 }
 int Multiplication(int x,int y){
     int m = 1;
