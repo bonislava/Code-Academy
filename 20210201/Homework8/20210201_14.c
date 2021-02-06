@@ -8,6 +8,7 @@ int main(){
     char s[] = "Symbols in this\n";
     int lim;
     printf("Symbols are: %d ",getline(s,lim));
+    return 0;
 }
 int getline(char s[],int lim){
     int i;
