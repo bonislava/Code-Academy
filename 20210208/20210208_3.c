@@ -15,8 +15,7 @@ int main(void){
 		for(j=0;j<5;j++){
 			for(k=0;k<5;k++){
 				printf("%d ",arr[i][j][k]);
-				if(k==4)
-				{
+				if(k==4){
 					printf("\n");
 				}
 			}
