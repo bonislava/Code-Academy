@@ -12,6 +12,7 @@ int main(){
     char s[20] = " ";
     itob(19,s,16);
     printf("%s",s);
+    return 0;
 
 }
 void itob(int n,char s[],int b){ 

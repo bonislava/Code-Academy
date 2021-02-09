@@ -11,4 +11,5 @@ int main(){
     int arr2[3];
     double arr3[3];
     printf("Size is %d, %d, %d",sizeof(arr1),sizeof(arr2),sizeof(arr3));
+    return 0;
 }

@@ -16,4 +16,5 @@ int main(){
     char str[]="Boni";
     reverse(str);
     printf("%s\n",str);
+    return 0;
 }

@@ -8,6 +8,7 @@ void lower(char s[]);
 int main(){
     char s[] = "LOW THIS STRING";
     lower(s);
+    return 0;
 }
 void lower(char s[]){
     int i;
