@@ -3,7 +3,7 @@
 #include <stdio.h>
  
 int main(){
-  int arr[100], *max, size, i, location = 1;
+  int arr[100], *max, size, i;
   printf("Enter the number of elements in array\n");
   scanf("%d", &size);
   printf("Enter %d integers\n", size);
@@ -16,9 +16,8 @@ int main(){
   for (i = 1; i < size; i++){
     if (*(arr+i) > *max){
        *max = *(arr+i);
-       location = i+1;
     }
   }
-  printf("Max element is at location number %d and it's value is %d.\n", location, *max);
+  printf("Max element is %d.\n", *max);
   return 0;
 }
