@@ -24,6 +24,7 @@ int generator(){
 }
 int func(){
     int choice;
+    choice:
     printf("save your pass 1.\n");
     printf("new pass press 2.\n");
     printf("exit 3.\n");
@@ -34,6 +35,7 @@ int func(){
             break;
         case 2:
             generator();
+            goto choice;
             break;
         case 3:
             break;
