@@ -19,7 +19,7 @@ int main(){
     return 0;
 }
 int generator(){
-    char password[6];
+    char password[7];
     char *p;
     for(p = password; p < password + 6; p++){
         *p = (rand() % 26) + 97;
