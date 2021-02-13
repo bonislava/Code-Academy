@@ -19,7 +19,7 @@ int main(){
     return 0;
 }
 int generator(){
-    char password[6];
+    char password[7];
     char *p;
     for(p = password; p < password + 6; p++){
         *p = (rand() % 26) + 97;
@@ -30,6 +30,7 @@ int generator(){
 }
 int func(){
     int choice;
+    choice:
     printf("save your pass 1.\n");
     printf("new pass press 2.\n");
     printf("exit 3.\n");
@@ -40,6 +41,7 @@ int func(){
             break;
         case 2:
             generator();
+            goto choice;
             break;
         case 3:
             break;
