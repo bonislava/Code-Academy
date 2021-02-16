@@ -10,13 +10,14 @@ string4. Дефинирайте функция, която през пойнте
 стринга.
 Извикайте функцията и копирайте от string1 в string4.*/
 #include <stdio.h>
+#define size 35
 
 void copy_str(char *str1,char *str2,char *str3,char *str4);
 
 int main(){
     char str1[]="A string to be copied";
     char str3[]="I am very good in strings coping!";
-    char str2[35],str4[35];
+    char str2[size],str4[size];
     copy_str(str1,str2,str3,str4);
     printf("%s\n",str2);
     printf("%s\n",str4);
