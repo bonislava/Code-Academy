@@ -36,7 +36,7 @@ char *change(char *str, char *old, char *new){
             i += newlen;
             str += oldlen;
         }
-        else
+        else{
             str2[i++] = *str++;
         }
     }
