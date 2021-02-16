@@ -2,6 +2,8 @@
 пойнтери.*/
 #include <stdio.h>
 #include <stdlib.h>
+#define num1 26
+#define num2 97
 
 int func();
 int generator();
@@ -16,7 +18,7 @@ int generator(){
     char password[7];
     char *p;
     for(p = password; p < password + 6; p++){
-        *p = (rand() % 26) + 97;
+        *p = (rand() % num1) + num2;
     }
     *p = '\0';
     printf("your password is: %s\n",password);
