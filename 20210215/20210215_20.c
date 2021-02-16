@@ -22,22 +22,23 @@ char *change(char *str, char *old, char *new){
     int i, count = 0;
     int newlen = strlen(new);
     int oldlen = strlen(old);
-    for (i = 0; str[i] != '\0'; i++){
-        if (strstr(&str[i], old) == &str[i]){
+    for(i = 0; str[i] != '\0'; i++){
+        if(strstr(&str[i], old) == &str[i]){
             count++;
             i += oldlen - 1;
         }
     }
     str2 = (char *)malloc(i + count * (newlen - oldlen) + 1);
     i = 0;
-    while (*str){
-        if (strstr(str, old) == str){
+    while(*str){
+        if(strstr(str, old) == str){
             strcpy(&str2[i], new);
             i += newlen;
             str += oldlen;
         }
         else
             str2[i++] = *str++;
+        }
     }
     str2[i] = '\0';
     return str2;
