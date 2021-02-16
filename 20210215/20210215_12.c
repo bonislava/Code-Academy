@@ -4,20 +4,21 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#define size 10
 
 int main(){
-    int arr[10][10][10];
+    int arr[size][size][size];
     
     int *element =&arr;
     long long int sum = 0;
 
     srand(time(NULL));
-    for(int i = 0; i < 10*10*10; i++){
+    for(int i = 0; i < size*size*size; i++){
         *element = rand();
         //printf("%d\n", *element);
         sum += *element;
         element++;
     }
-    printf("sum = %lld\n", sum / (10*10*10));
+    printf("sum = %lld\n", sum / (size*size*size));
     return 0;
 }
