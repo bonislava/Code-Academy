@@ -9,7 +9,7 @@ https://www.tutorialspoint.com/c_standard_library/c_function_strlen.htm
 стринга, от който копираме, и какво да се случва тогава.*/
 #include <stdio.h>
 #include <string.h>
-#define size
+#define size 35
 
 int main(){
     char str1[size];
