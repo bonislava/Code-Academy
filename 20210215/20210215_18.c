@@ -9,10 +9,11 @@ https://www.tutorialspoint.com/c_standard_library/c_function_strlen.htm
 стринга, от който копираме, и какво да се случва тогава.*/
 #include <stdio.h>
 #include <string.h>
+#define size 35
 
 int main(){
-    char str1[35];
-    char str2[35];
+    char str1[size];
+    char str2[size];
     char *str3 = "A string to be copied!";
     char *str4 = "I am very good in strings coping!";
     
