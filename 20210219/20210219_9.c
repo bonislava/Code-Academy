@@ -33,5 +33,5 @@ int main(){
   res = add(screen.a, screen.b);
   printf("Sum x = %d\n", res.x);
   printf("Sum y = %d", res.y);
- return 0;
+  return 0;
 }
