@@ -1,45 +1,61 @@
 /*Задача 6. Направете по подобен начин триъгълник:*/
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+#include <math.h>
 
-#define SIZE 15
-#define ROW_1 3
-#define ROW_2 7
-#define COL_1 8
-#define COL_2 13
-#define COL_3 1
+#define DIM_SIZE 15
+#define NUM_1 5
+#define NUM_2 10
+#define NUM_3 0
 
 struct point{
-  int x;
-  int y;
+    int x;
+    int y;
 };
-int main(){
-  int row,col;
-  char arr[SIZE][SIZE];
-  struct point a = {ROW_1,COL_1};
-  struct point b = {ROW_2,COL_2};
-  struct point c = {ROW_2,COL_3};
-  for(row = 0; row < SIZE; row++){
-    for(col = 0; col < SIZE; col++){
-      if(row == a.x && col == a.y){
-        arr[row][col]='@';
-      }
-      else if(row == b.x && col == b.y){
-        arr[row][col]='@';
-      }
-      else if(row == c.x && col == c.y){
-        arr[row][col]='@';
-      }
-      else{
-        arr[row][col] = ' ';
-      }
-    }
-  }
-  for(row = 0; row < SIZE; row++){
-    for(col = 0; col < SIZE; col ++){
-      printf("%c",arr[row][col]);
-    }
-    printf("\n");
-  }
-  return 0;
+
+double area(struct point a, struct point b, struct point c) { 
+   return fabs((a.x*(b.y-c.y) + b.x*(c.y-a.y) + c.x*(a.y-b.y))/2.0);
+} 
+
+
+int check_point_inside(struct point a, struct point b, struct point c, struct point p){
+    double tri_area = area(a,b,c);
+    double a_area = area(a,b,p);
+    double b_area = area(a,c,p);
+    double c_area = area(b,c,p);
+    
+    return (int)(tri_area == a_area + b_area + c_area);
 }
+
+int main(){
+    char field[DIM_SIZE][DIM_SIZE] = {'-'};
+    
+    struct point a = {NUM_1,NUM_1};
+    struct point b = {NUM_3, NUM_2};
+    struct point c = {NUM_2, NUM_2};
+    
+    char *el = field[0];
+    for(int i=0; i<DIM_SIZE; i++){
+        for(int j = 0; j<=DIM_SIZE; j++){
+            struct point p;
+            p.x = i;
+            p.y = j;
+            if(check_point_inside(a,b,c,p)){
+                field[i][j] = '@';
+            }else{
+                field[i][j] = '-';
+            }
+        }
+    }
+    
+
+    el = field[0];
+    for(int i=0; i<DIM_SIZE; i++){
+        for(int j = 0; j<=DIM_SIZE; j++){
+            printf("%c",field[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
