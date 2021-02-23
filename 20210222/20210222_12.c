@@ -13,3 +13,26 @@ CType2 m_bitField2 : M;
 последователност, да са char, char, short int, short int. Как се променя
 големината на структурата?
 Опитайте същото с препроцесор #pragma pack(1).*/
+#include <stdio.h>
+#pragma pack(1)
+#define SHORT 3
+#define CHAR 6
+struct Ctype{
+    short x:SHORT;
+    char y:CHAR;
+};
+struct Ctype2{
+    char y:CHAR;
+    char y1:CHAR;
+    short x:SHORT;
+    short x1:SHORT;
+}__attribute__((packed));
+
+int main(){
+    struct Ctype one;
+    struct Ctype2 two;
+    printf("one: %d\n",sizeof(one));
+    printf("two: %d\n",sizeof(two));
+
+    return 0;
+}
