@@ -22,7 +22,8 @@ struct date valid(struct date first){
     if(day < ONE){
         printf("Enter a valid day:\n");
         scanf("%d", &day);
-    }else if(day > THIRTY_ONE){
+    }
+    if(day > THIRTY_ONE){
         printf("Enter a valid day\n");
         scanf("%d",&day);
     }
@@ -33,7 +34,8 @@ struct date valid(struct date first){
     if(month < ONE){
         printf("Please enter valid month:\n");
         scanf("%d", &month);
-    }else if(month > TWELVE){
+    }
+    if(month > TWELVE){
         printf("Please enter valid month:\n");
         scanf("%d",&month);
     }
@@ -45,7 +47,7 @@ struct date valid(struct date first){
         printf("Please enter valid year:\n");
         scanf("%d", &year);
     }
-    else if(year >YEAR){
+    if(year >YEAR){
         printf("Please enter valid year:\n");
         scanf("%d",&year);
     }
