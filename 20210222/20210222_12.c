@@ -14,13 +14,16 @@ CType2 m_bitField2 : M;
 големината на структурата?
 Опитайте същото с препроцесор #pragma pack(1).*/
 #include <stdio.h>
+
 #pragma pack(1)
 #define SHORT 3
 #define CHAR 6
+
 struct Ctype{
     short x:SHORT;
     char y:CHAR;
 };
+
 struct Ctype2{
     char y:CHAR;
     char y1:CHAR;
