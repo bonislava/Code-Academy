@@ -2,6 +2,7 @@
 #include <stdio.h>
 #define SIZE 32
 #define NUM 13
+
 union tagMyData{
     int m_nValue;
     float m_fValue;
