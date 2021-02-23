@@ -6,13 +6,12 @@ Ctype m_bitField : N;
 };*/
 #include <stdio.h>
 
-#define NUM 6
 #define NUM2 12
 #define NUM3 4
 
 union Uni{
-    short x:NUM;
-    char y:NUM;
+    short x:6;
+    char y:6;
 };
 
 int main(){
