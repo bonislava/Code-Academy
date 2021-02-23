@@ -30,7 +30,7 @@ void Print(struct value* x, enum type* y){
 }
 int main(){
    struct value x;
-   x.member1.num =NUM;
+   x.member1.num =NUM3;
    x.member2 = VALUE_INT;
    Print(&x,&x.member2);
    strcpy(x.member1.arr,"String");
