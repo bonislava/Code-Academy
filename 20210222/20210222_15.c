@@ -8,6 +8,7 @@ prog1 > structs20.cvs*/
 #define SIZE 20
 #define SIZE2 10
 #define D_NUM 0.5
+#define NUM 2
 
 enum bool{
     false,
@@ -25,7 +26,7 @@ int main(){
     arr2[i].num=i;
     strcpy(arr2[i].arr1,"COFFEE");
     arr2[i].d=(double)i+D_NUM;
-    if(i%2==0){
+    if(i%NUM==0){
         arr2[i].e=true;
     } else{
         arr2[i].e=false;
