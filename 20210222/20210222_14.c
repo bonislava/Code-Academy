@@ -14,7 +14,7 @@ struct date{
     int day : 6;
     int month : 6;
     int year : 12;
-};
+}__attribute__((packed));
 struct date valid(struct date first){
     int day, month, year;
     printf("Enter day: \n");
@@ -28,6 +28,7 @@ struct date valid(struct date first){
         scanf("%d",&day);
     }
     first.day = day;
+    printf("size of day %d\n",sizeof(day));
 
     printf("Enter month: \n");
     scanf("%d", &month);
@@ -40,6 +41,7 @@ struct date valid(struct date first){
         scanf("%d",&month);
     }
     first.month = month;
+    printf("size of month %d\n",sizeof(month));
 
     printf("Enter year: \n");
     scanf("%d", &year);
@@ -52,6 +54,8 @@ struct date valid(struct date first){
         scanf("%d",&year);
     }
     first.year = year;
+    printf("size of year %d\n",sizeof(year));
+    printf("SIZE :%d\n",sizeof(day)+sizeof(month)+sizeof(year));
     return first;
 }
 
