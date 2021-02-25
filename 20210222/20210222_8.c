@@ -7,6 +7,7 @@
 #define SIZE 15
 #define NUM1 1
 #define NUM2 0
+#define NUM3 5
 
 enum type{ 
     VALUE_INT = NUM1 ,
@@ -27,7 +28,7 @@ void Print(union test* x, enum type* y){
 int main(){
     union test Uni;
     enum type En = VALUE_INT;
-    Uni.num = 5;
+    Uni.num = NUM3;
     Print(&Uni, &En);
     strcpy(Uni.arr, "string");
     enum type *z = &En;

@@ -7,6 +7,7 @@
 #define SIZE 15
 #define NUM1 1
 #define NUM2 0
+#define NUM3 15
 
 enum type{ 
     VALUE_INT = NUM1 ,
@@ -29,7 +30,7 @@ void Print(struct value* x, enum type* y){
 }
 int main(){
    struct value x;
-   x.member1.num =10;
+   x.member1.num =NUM3;
    x.member2 = VALUE_INT;
    Print(&x,&x.member2);
    strcpy(x.member1.arr,"String");
