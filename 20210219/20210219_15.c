@@ -38,6 +38,7 @@ int main(){
     struct tagTMyTime t4=minTime(&t1,&t2);
     printf("Time 4: \n");
     printTime(&t4);
+    
     return 0;
 }
 
