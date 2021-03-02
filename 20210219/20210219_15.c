@@ -24,7 +24,7 @@ struct tagTMyTime sumTime(struct tagTMyTime *t1, struct tagTMyTime *t2);
 struct tagTMyTime minTime(struct tagTMyTime *t1, struct tagTMyTime *t2);
 void printTime(struct tagTMyTime *time);
 
-int main(void){
+int main(){
     struct tagTMyTime t1=makeTime(23,6,18);
     printf("Time 1: \n");
     printTime(&t1);
