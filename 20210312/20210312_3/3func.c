@@ -13,10 +13,10 @@ int add(int n){
 
     return 0;
 }
-void search(int n){
+void search(int q,int n){
     t_node *p = start;
     int i;
-    for(i = 0;i < 14-n;i++){
+    for(i = 0;i <q-1-n;i++){
         p = p->m_pNext;
     }
     printf("%d element is %d\n",n,p->m_nValue);
