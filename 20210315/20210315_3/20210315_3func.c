@@ -1,4 +1,5 @@
 #include "20210315_3.h"
+
 treeNode_t *insert(int d){
     treeNode_t *tmp = (treeNode_t*)malloc(sizeof(treeNode_t));
     treeNode_t *current= NULL;
@@ -28,6 +29,7 @@ treeNode_t *insert(int d){
         }
     }
 }
+
 void preorder(treeNode_t *n){
     if(n){
         printf("%d  ", n->data);
