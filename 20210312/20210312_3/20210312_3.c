@@ -11,7 +11,7 @@ int main(){
     for(i=1; i<15; ++i)
         add(i);
     printf("\n");
-    search(5);
+    search(15,5);
     printList();
     return 0;
 }

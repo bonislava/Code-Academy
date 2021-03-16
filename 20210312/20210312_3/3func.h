@@ -10,5 +10,5 @@ t_node *start;
 
 void init();
 int add(int);
-void search(int n);
+void search(int q,int n);
 void printList();
