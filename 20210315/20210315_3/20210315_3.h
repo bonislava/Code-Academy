@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 typedef struct treeNode_t treeNode_t;
-typedef struct treeNode_t
-{
+
+typedef struct treeNode_t{
     int data;
     struct treeNode_t *left;
     struct treeNode_t *right;
