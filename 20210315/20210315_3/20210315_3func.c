@@ -1,8 +1,8 @@
 #include "20210315_3.h"
-t_nodeTree *insert(int d){
-    t_nodeTree *tmp = (t_nodeTree*)malloc(sizeof(t_nodeTree));
-    t_nodeTree *current= NULL;
-    t_nodeTree *parent = NULL;
+treeNode_t *insert(int d){
+    treeNode_t *tmp = (treeNode_t*)malloc(sizeof(treeNode_t));
+    treeNode_t *current= NULL;
+    treeNode_t *parent = NULL;
     tmp->data = d;
     tmp->right = tmp->left = NULL;
     if(NULL == root){
@@ -28,7 +28,7 @@ t_nodeTree *insert(int d){
         }
     }
 }
-void preorder(t_nodeTree *n){
+void preorder(treeNode_t *n){
     if(n){
         printf("%d  ", n->data);
         preorder(n->left);
