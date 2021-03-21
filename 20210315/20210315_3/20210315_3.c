@@ -11,7 +11,7 @@
 #include "20210315_3.h"
 #define SIZE 13
 
-t_nodeTree *root = NULL, *a, *b, *c, *d, *e;
+treeNode_t *root = NULL, *a, *b, *c, *d, *e;
 
 int main(void){
     int i;

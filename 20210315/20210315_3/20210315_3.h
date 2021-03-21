@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct nodeTree t_nodeTree;
-typedef struct nodeTree
-{
+typedef struct treeNode_t treeNode_t;
+
+typedef struct treeNode_t{
     int data;
-    struct nodeTree *left;
-    struct nodeTree *right;
-} t_nodeTree;
+    struct treeNode_t *left;
+    struct treeNode_t *right;
+} treeNode_t;
 
-extern t_nodeTree *root;
+extern treeNode_t *root;
 
-void preorder(t_nodeTree* n);
-t_nodeTree *insert(int d);
+void preorder(treeNode_t* n);
+treeNode_t *insert(int d);
