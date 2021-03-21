@@ -54,12 +54,8 @@ char find_duplicate(char *arr){
     		for(j=i+1;arr[j];j++){
             	if(arr[i]==arr[j])
             	   arr[j]=c;
-        	
-		    }
-    		
 		}
-     	
-     	
+	}	
     }  
 	return c;
   	 
