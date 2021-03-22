@@ -2,7 +2,6 @@
 
 int main(){
     char arr[SIZE],c;
-    int i;
     printf("\nPlease Enter any String : \n");
     scanf("%s", arr);
     lowercase(arr);
