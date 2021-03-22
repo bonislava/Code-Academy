@@ -4,7 +4,6 @@
  и всички малки букви ги преобразува в съответните големи.*/
 
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 #define SIZE 30
 
@@ -16,7 +15,6 @@ char find_duplicate(char *arr);
  
 int main(){
     char arr[SIZE],c;
-    int i;
     printf("\nPlease Enter any String : \n");
     scanf("%s", arr);
     lowercase(arr);
