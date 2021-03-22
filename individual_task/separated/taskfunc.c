@@ -1,8 +1,8 @@
 #include "taskfunc.h"
 
 int lowercase(char arr[]){
-    int i = 0; 
-    while(arr[i] != '\0') {
+    int i = 0; /* counter for the loop */
+    while(arr[i] != '\0') { /*convert  to lowercase*/
         arr[i] = tolower(arr[i]);
         i++; 
     }
@@ -10,7 +10,7 @@ int lowercase(char arr[]){
     
 }
 
-void remove_duplicates(char *arr,char c){
+void remove_duplicates(char *arr,char c){ /*function to remove the repeated elements from the string.*/
     int i,k=0;
     for(i=0;arr[i];i++){
     	arr[i]=arr[i+k];     	
@@ -21,7 +21,7 @@ void remove_duplicates(char *arr,char c){
     }
 }
 
-char find_duplicate(char *arr){
+char find_duplicate(char *arr){ /* find the repeated characters in the string.*/
     char c='*';
     int i,j;
     for(i=0;arr[i];i++){
@@ -37,8 +37,8 @@ char find_duplicate(char *arr){
 }
 
 int uppercase(char arr[]){
-    int i = 0;
-    while(arr[i] != '\0') { 
+    int i = 0; /* counter for the loop */
+    while(arr[i] != '\0') { /*convert  to uppercase*/
         arr[i] = toupper(arr[i]);
         i++; 
     } 
